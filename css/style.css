@@ -10,7 +10,7 @@ html {
     font-variation-settings: "opsz" 64;
 }
 body {
-	background-color: black;
+	background-color: #1A1815;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -294,16 +294,16 @@ footer{
 }
 .contatti{
 	text-decoration: underline;
-	background-color: black;
+	background-color: #1A1815;
 	text-align: center;
-	color: #E4E4DB;
+	color: #1A1815;
 	margin-top: 10%; 
 }
 .contatti a:visited{
   color:  #E4E4DB;
 }
 .copyrights{
-	background-color: black;
+	background-color: #1A1815;
 	text-align: center;
 	color: #E4E4DB;
 }
