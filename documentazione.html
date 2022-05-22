@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="java/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AEIDE</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<h1><a href="index.html">AEIDE</a></h1>
+	</header>
+	<nav>
+		<div class="overlay" id="myNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<a class="whitelink" href="index.html">Homepage</a>
+					<a class="whitelink" href="forum.html">Forum</a>
+					<a class="whitelink" href="about.html">About AEIDE</a>
+				</div>
+			</div>
+			<span onclick="openNav()">&#9776</span> <!--TRE BARRE-->
+	</nav>
+
+	<section>
+		<div>
+			<h2>Documentazione</h2>	
+		</div>
+	</section>
+
+	<section>
+		<div class="doc">
+			<h2 id="abs">ABSTRACT</h2>
+				<p>AEIDE è un sito fatto dagli utenti per gli utenti: ciò che davvero dà vita al sito è l'interazione tra le persone. </br> L'idea è quella di creare un database composto dalle canzoni consigliate nei Forum sulla base di una query iniziale. Quando un utente si trova nella Homepage e vuole solo fare una ricerca mirata, può cercare delle parole chiave nella Search bar e dal database verranno estratti i risultati più coerenti. Se invece cerca una risposta più ampia, che porti a creare un vera e propria playlist, può dare inizio a un nuovo Forum. Attualmente, il form "Inizia un nuovo Forum" e gli strumenti di ricerca non sono attivi, ma potrebbero in futuro essere implementati e permettere quindi la fruizione completa del sito.</p>
+		</div>
+
+		<div class="doc">
+			<h2>Project Management Plan</h2>
+				<h3>Benchmarking</h3>
+					<p>
+					<b class="bullet">Obiettivi -</b> l'obiettivo di AEIDE è quello di creare delle community di utenti che chiedono e consigliano canzoni, permettendo la creazione di playlist non assoggettate a strategie di marketing e algoritmi, ma unicamente basate sul gusto personale degli utenti. </br>
+
+					<b class="bullet">Target -</b> il pubblico di riferimento afferisce a quella fetta di utenti non soddisafatti del metodo di creazione delle playlist o dei criteri con cui vengono suggerite canzoni potenzialmente affini ai propri gusti da altri provider. </br>
+
+					<b class="bullet">Analisi -</b> tramite lo strumento Google Forms, ho voluto vedere quale fosse l'impressione di un gruppo di utenti di Spotify e di Youtube sul  modo dei Provider di creare playlist e consigliare brani. Il form è stato compilato da 47 persone, di cui il 36,2% sostiene di non essere soddisfatto/a delle playlist create in automatico da Spotify e il 46,6% non apprezza il criterio di selezione dei video consigliati da Youtube. Alcuni tra gli intervistati hanno dato delle motivazioni rispetto alla loro insoddisfazione, tra cui il fatto che i brani consigliati sono spesso messi in una posizione di visibilità per questioni di marketing e non di effettiva affinità con i gusti dell'utente, limitando sia la qualità dell'esperienza sia il potenziale allrargarsi dei propri orizzonti musicali. 
+				
+					<div class="row">
+  <div class="column">
+    <img src="images/domandeform.jpg" alt="domande form. In generale, ti ritieni soddisfatto delle playlist create in automatico da Spotify? E dei brani suggeriti da Youtube? Se no, cosa non ti soddisfa? Cosa credi che potrebbe rendere questi servizi più efficienti?" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/piechart.jpg" alt="Due diagrammi a torta" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/rispostaform.jpg" alt="Risposta lunga al form" style="width:100%">
+  </div>
+</div>
+	
+				</p>
+			<p><b class="bullet">I competitor -</b> i competitor analizzati sono stati Spotify, Youtube, Twitter e l'interazione tra speaker radiofonico e ascoltatori. Su Spotify e Youtube ci siamo già soffermati attraverso l'analisi del form. Da Twitter viene ripresa l'interazione spontanea e mirata, tipica delle comunità di pratica che si riuniscono solo per uno scopo e poi si disgregano. Quindi, si riprende da qui il format domanda/commento-risposta. Per quanto riguarda l'interazione speaker-ascoltatori, ci si rifà al tipico momento in cui lo speaker annuncia una canzone e poi si ricollega a una storia legata ad essa o all'anno della sua uscita, per poi chiedere agli ascoltatori quale sia la canzone che suscita in loro un certo ricordo. 
+			</p>	
+			
+		</div>
+
+	<section>
+		<div>
+			<h2>Struttura e Layout</h2>
+			<h3 class="sub">Architettura del sito</h3>
+			<img id="lay" src="images/Layout.jpg" alt="layout sito"> </br>
+			<h3 class="sub">Wireframe</h3>
+			<div class="row">
+  <div class="column">
+    <img src="images/wframehome.jpg" alt="wireframe homepage" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/wframeforum.jpg" alt="wireframe Forum" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/wireframeabout.jpg" alt="wireframe About AEIDE" style="width:100%">
+  </div>
+</div>
+			
+		</div>
+
+	<div class="doc">
+		<h2>Linguaggi e Strumenti</h2>
+		<p>I linguaggi impiegati sono HTML, CSS e Javascript, i codici sono stati scritti con l'editor Sublimetext4.</br> Inoltre, sono stati usati: </br> <b>-</b> Google Forms, per la creazione del sondaggio;</br> <b>-</b> GoogleFonts, per la scleta del font; </br> <b>-</b> Adobe Color, per la scelta della palette di colori;</br> <b>-</b> W3school, per integrare alcune linee di codice HTML, CSS e Javascript;</br> <b>-</b> Balsamiq, per la creazione dei Wireframe;</br> <b>-</b> Miro, per disegnare lo schema del Layout; </br> <b>-</b> Github, per pubblicare il sito online; </br> <b>-</b> Google Analytics, per monitorare le interazioni; </br> <b>-</b> Social (Instagram, Whatsapp), per pubblicizzare il sito.</p>
+
+		<h2>Look and Feel</h2>
+			<p>All'interno del sito è stato usato un solo font, un <i>sans-serif</i> della famiglia Monserrat, preso da GoogleFonts. Per la scelta dei colori è stato usato Adobe Color. Lo sfondo è un classico nero, l'Header, il bottone della Search box e il contenitore del form nella sezione Forum sono #E4E4DB. Per il cambio di colore delle sezioni del menù quando ci si passa il mouse sopra è stato usato #DBBAB2. I paragrafi e i sottotitoli sono stati scritti in bianco. Su siti e applicazioni a tema musicale spesso si vede la formula nero-bianco-terzo colore, che su Youtube per esempio è il rosso e su Spotify è il verde. In questo caso si gioca sulle sfumature del beige. La grafica è minimalista. </p>
+		
+			<h2>Communication strategy</h2>
+			<h3>Background</h3>
+				<p>AEIDE è una versione più grande e digitale del tipico passaprola tra amici che si consigliano canzoni. Non ci sono limiti alle possibili combinazioni che potrebbero nascere nelle playlist assemblate da sconosciuti sugli stessi temi. Ha il doppio vantaggio di permettere ai fruitori di conoscere nuovi artisti e generi, e concede delle possibilità in più ad artisti meno conosciuti di essere scoperti e apprezzati.</p>
+			<h3>Obiettivi comunicativi</h3>
+				<p>Il sito vuole essere un progetto pragmatico e risolvere subito il problema della playlist d'occasione, del sottofondo da evento. Anche per questo non è prevista la creazione di un account, così da poter essere fruibile da chiuqnue in qualsiasi momento, senza dover passare per processi di registrazione. Anche la grafica minimalista è indice di questa cosa, in quanto gli unici elementi posti nel sito sono funzionali a uno scopo preciso.</p>
+			<h3>Target, audience e messaggio</h3>
+				<P>Il sito si rivolge soprattutto ad Under 30, che sono coloro che fruiscono maggiormanete dei servizi di streming musicale, ma un qualsiasi Over 30 che abbia abbastanza familiarità con altri Social come Twitter potrebbe comunque riconoscere l'utilità del sito. Il raggiungimento del target, oltre che attraverso attività di promozione sui Social, potrebbe essere raggiunto soprattutto attraverso il passaparola tra utenti soddisfatti o incuriositi.</br> Il sito vuole indirizzare gli utenti a esplorare: fare una ricerca dalla Home, dare il via a un nuovo Forum o anche solo scorrere Forum già iniziati e dare un'occhiata dall'esterno.</P>
+			<h3>Promozione</h3>
+				<p>Il sito verrà pubblicizzato tramite la pubblicazione del link nelle stories di Instagram, della sua condivisione tramite whatsapp e passaparola.</p>
+			<h3>Valutazione dei risultati</h3>
+
+	</div>
+	</section>
+	</section>
+
+	
+	<footer>
+		<div class="contatti">
+				<a href="contact.html">Contatti</a>
+		</div> <!--metanavigazione-->
+		<div class= "copyrights">
+				<p> &copy; Copyright (c) by Chiara Russo/Informatica umanistica 2021/2022
+		</div>
+	</footer>
+</body>
+</html>
